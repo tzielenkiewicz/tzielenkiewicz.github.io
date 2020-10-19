@@ -2,16 +2,27 @@ $bgcolor: #000000;
 $mfontcolor: #00008b;
 $addfontcolor: #11ffff;
 $sidecolor: #ff0000;
+$color-text: #444444;
+$color-background: #111111;
+$color-main: green;
+$font-text: Fondamento, cursive;
+$font-header: Modak, cursive;
 $mainfont: Fondamento;
 $sidefont: Pangolin;
+$transition: all 0.5s;
 
 #container {
-	width: 100%;
+	width: 1330px;
 	height: 650px;
 	background-color: $bgcolor;	
 	color: $mfontcolor;
-	margin-top: -20px;
+	margin: -20px 0 0 -10px;
 	padding: 10px;
+}
+
+#container2 {
+ 	width: 1330px;
+	
 }
 
 .rectangle {
@@ -24,6 +35,7 @@ $sidefont: Pangolin;
 }
 
 #smallerContainer {
+	clear:both;
 	font-family: $mainfont;
 	width: 100%;
 	height: 500px;
@@ -47,6 +59,16 @@ $sidefont: Pangolin;
 	font-family: $sidefont;
 	color: $addfontcolor;
 	border-radius: 60%;
+}
+
+#photo2 {
+	float: left;
+	width: 500px;
+	height: 500px;
+	background-image: url(danpatala.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 45%;
 }
 
 #nav2 {
@@ -130,6 +152,204 @@ a.tilelink:hover {
   	margin-left: +105px;
   	box-shadow: 1px 1px 5px 2px;
 	color: $sidecolor;
+}
+
+.feature2 {
+	width: 320px;
+	height: 70px;
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 100px;
+	line-height: 70px;
+	font-size: 45px;
+	border-radius: 35%;
+	background-color: $mfontcolor;
+	color: $addfontcolor;
+	box-shadow: 3px 3px 5px 2px;
+}
+
+.feature2:hover {
+	width: 315px;
+	height: 65px;
+	margin-top: +105px;
+  	margin-left: +45px;
+  	box-shadow: 1px 1px 5px 2px;
+	color: $sidecolor;
+}
+
+.name {
+	float:left; 
+	margin-left: 10px;
+}
+
+section {
+  padding: 60px 0;
+  color: $color-text;
+}
+
+.arts {
+  background-color: $color-background;
+	width: 1330px;
+	
+}
+
+.section-title {
+  text-align: center;
+  background-color: orange;
+  width: 1330px;
+  font-family: $font-header;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '------';
+  width: 100px;
+  height: 5px;
+  background: $color-main;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -50px;
+}
+
+.section-title:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 160px;
+  height: 5px;
+  background: $color-main;
+  left: 50%;
+  bottom: 100px;
+  margin-left: -80px;
+}
+
+.tempDiv {
+	float: left;
+	height: 400px;
+	text-align: center;
+		width: 30%;
+}
+#tempDivR {
+	width: 70%;
+}
+
+#tempDivA {
+	background-image: url(flames.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10%;
+	box-shadow: 1px 1px 5px 2px;
+  	color: #ff0000;
+}
+
+.sentence {
+	color: $mfontcolor; 
+	font-size: 40px;
+}
+
+
+
+/*
+.arts-wrapper {
+  display: flex;
+
+}
+
+.art {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+ }*/
+
+
+.art i {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 70px;
+  color: $mfontcolor;
+  border-radius: 15%;
+  box-shadow: 10px 10px 5px 2px;
+}
+
+#art1 i {
+	background-image: url(spider.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#art2 i {
+	background-image: url(eye.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#art3 i {
+	background-image: url(cat.jpg);	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.art i:hover {
+  margin-top: +5px;
+  margin-left: +5px;
+  box-shadow: 5px 5px 5px 2px;
+	width: 350px;
+	height: 350px;
+	transition: $transition;
+}
+
+.art-description {
+  height: 150px;
+  text-align: justify;
+  background-color: #cccccc;
+  border-radius: 2%;
+  margin: 10px;
+  padding: 20px;
+  color: #555555;
+  font-family: $font-text;
+  box-shadow: 10px 10px 10px 2px;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  background-color: orange;
+  width: 100%;
+  padding: 20px;
+  font-family: $font-header;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.link {
+  float: right;
+  width: 20%;
+  padding: 30px 0 40px 0;
+  background-color: orange;
+  text-align: center;
+  margin-top: 100px;
+	margin-right: 20px;
+	border-radius: 40%;
+}
+
+.btn2 {
+  padding: 10px;
+  font-size: 14px;
+  background-color: $color-main;
+  color: orange;
+  border-radius: 45%;
+  transition: $transition;
+}
+
+.btn2:hover {
+  box-shadow: none;
+  color: #000000;
+  box-shadow: 5px 5px 2px 2px #333333;
 }
 
 .blinking {
