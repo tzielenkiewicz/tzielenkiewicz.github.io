@@ -373,4 +373,84 @@ section {
 	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
+	font-family: $sidefont;
+}
+
+.square {
+	float: left;
+	width: 50%;
+	height: 500px;
+}
+#picture {
+	background-image: url(hat.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 22px;
+	font-family: $mainfont;
+}
+
+.education {
+	padding: 0 10px 5px 80px;
+	width: 550px;
+	height: 300px;
+	background-color: $color-background;
+	border-radius: 10%;
+	border: 2px solid $mfontcolor;
+	position: relative;
+	color: $addfontcolor;
+	text-align: justify;
+	font-family: $sidefont;
+}
+
+.education:hover {
+	width: 520px;
+	padding-left: 700px;
+	transition: $transition;
+}
+
+.education1 {
+	padding: 0 10px 5px 80px;
+	width: 550px;
+	height: 300px;
+	background-color: $color-background;
+	border-radius: 10%;
+	border: 2px solid $mfontcolor;
+	position: relative;
+	top: -240px;
+	color: $addfontcolor;
+	text-align: justify;
+	font-family: $sidefont;
+}
+
+#education1 {
+	position: relative;
+	left: 30px;
+}
+
+#education2 {
+	position: relative;
+	left: 60px;
+	top: -480px;
+}
+
+#education3 {
+	position: relative;
+	left: 90px;
+	top: -720px;
+}
+
+
+.education1:hover {
+	width: 520px;
+	padding-left: 700px;
+	transition: $transition;
+}
+
+.smallRectangle {
+	border-radius: 40%;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	background-color: #333333;
+	
 }
