@@ -323,11 +323,12 @@ section {
   height: 500px; }
 
 #picture {
-  background-image: url(hat.jpg);
+  background-image: url(pics/hat.jpg);
   background-repeat: no-repeat;
   background-position: center;
   font-size: 22px;
-  font-family: Fondamento; }
+  font-family: Fondamento;
+  color: #11ffff; }
 
 .education {
   padding: 0 10px 5px 80px;
@@ -366,17 +367,23 @@ section {
 #education2 {
   position: relative;
   left: 60px;
-  top: -480px; }
+  top: -480px;
+  height: 320px; }
 
 #education3 {
   position: relative;
   left: 90px;
-  top: -720px; }
+  top: -740px;
+  height: 310px; }
 
 .education1:hover {
   width: 520px;
   padding-left: 700px;
   transition: all 0.5s; }
+
+#education3:hover {
+  padding-left: 660px;
+  width: 560px; }
 
 .smallRectangle {
   border-radius: 40%;
@@ -384,5 +391,18 @@ section {
   text-align: center;
   font-size: 30px;
   background-color: #333333; }
+
+.photos {
+  width: 500px;
+  height: 130px;
+  background-color: #000000;
+  margin: 20px 0 0 10px;
+  border: 1px dotted #ffffff; }
+
+.pict {
+  width: 120px;
+  height: 120px;
+  margin: 5px 0 0 4px;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
