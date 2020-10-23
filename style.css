@@ -183,61 +183,104 @@ section {
   bottom: 100px;
   margin-left: -80px; }
 
-.tempDiv {
+.artsWrapper {
   float: left;
   height: 400px;
-  text-align: center;
-  width: 30%; }
+  text-align: left;
+  width: 40%; }
 
-#tempDivR {
-  width: 70%; }
+#artsWrapperR {
+  width: 60%; }
 
-#tempDivA {
+#artsWrapperA {
   background-image: url(flames.jpg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10%;
   box-shadow: 1px 1px 5px 2px;
-  color: #ff0000; }
+  color: #ff0000;
+  width: 30%;
+  margin: 0 30px 0 30px; }
 
 .sentence {
   color: #00008b;
   font-size: 40px; }
 
-/*
-.arts-wrapper {
-  display: flex;
-
-}
-
 .art {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  float: left;
+  width: 300px;
+  height: 300px;
+  background-color: #111111;
   text-align: center;
- }*/
-.art i {
+  margin-left: 100px; }
+
+.exp {
+  margin-left: 5px;
+  padding-bottom: 30px;
+  float: left;
+  background-color: #111111;
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  font-size: 24px;
+  color: #ff0000; }
+
+#exp1 {
+  z-index: 5;
+  padding: 30px 0 100px 0; }
+
+#exp2 {
+  z-index: 4; }
+
+#exp3 {
+  margin: 0;
+  z-index: 1;
+  opacity: 90%; }
+
+#exp4 {
+  z-index: 2;
+  opacity: 90%; }
+
+#exp5 {
+  padding: 30px 0 100px 0;
+  z-index: 3;
+  opacity: 90%; }
+
+.art i, .exp i {
   width: 100px;
   height: 100px;
   line-height: 100px;
   font-size: 70px;
   color: #00008b;
   border-radius: 15%;
-  box-shadow: 10px 10px 5px 2px; }
+  box-shadow: 10px 10px 5px 2px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 #art1 i {
-  background-image: url(spider.jpg);
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-image: url(spider.jpg); }
 
 #art2 i {
-  background-image: url(eye.jpg);
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-image: url(eye.jpg); }
 
 #art3 i {
-  background-image: url(cat.jpg);
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-image: url(cat.jpg); }
+
+#exp1 i {
+  background-image: url(pics/lab3.jpg); }
+
+#exp2 i {
+  background-image: url(pics/auditorium.jpg); }
+
+#exp3 i {
+  background-image: url(pics/londonbus.jpg); }
+
+#exp4 i {
+  background-image: url(pics/singer.jpg); }
+
+#exp5 i {
+  background-image: url(pics/office.jpg); }
 
 .art i:hover {
   margin-top: +5px;
@@ -246,6 +289,23 @@ section {
   width: 350px;
   height: 350px;
   transition: all 0.5s; }
+
+.exp i:hover {
+  margin-top: -120px;
+  box-shadow: 5px 5px 5px 2px;
+  width: 480px;
+  height: 480px;
+  transition: all 0.5s; }
+  .exp i:hover .exp-description {
+    margin: 10px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #000000;
+    text-align: justify;
+    font-family: Pangolin; }
+
+#exp3 i:hover, #exp4 i:hover, #exp5 i:hover {
+  margin-left: -270px; }
 
 .art-description {
   height: 150px;
@@ -404,5 +464,11 @@ section {
   height: 120px;
   margin: 5px 0 0 4px;
   float: left; }
+
+.exp-description {
+  margin-top: -15;
+  font-size: 2px;
+  line-height: 3px;
+  text-align: justify; }
 
 /*# sourceMappingURL=style.css.map */
