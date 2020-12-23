@@ -467,8 +467,16 @@ section {
 
 .exp-description {
   margin-top: -15;
-  font-size: 2px;
+  font-size: 1px;
   line-height: 3px;
+  text-align: justify; }
+
+#change-color {
+  width: 350px;
+  margin-top: -240px;
+  color: #00008b;
+  font-family: arial;
+  font-size: 16px;
   text-align: justify; }
 
 /*# sourceMappingURL=style.css.map */
