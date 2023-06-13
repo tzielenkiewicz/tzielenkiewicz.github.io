@@ -1,5 +1,5 @@
 $bgcolor: #000000;
-$mfontcolor: #00008b;
+$mfontcolor: #2860b4;
 $addfontcolor: #11ffff;
 $sidecolor: #ff0000;
 $color-text: #444444;
@@ -10,6 +10,10 @@ $font-header: Modak, cursive;
 $mainfont: Fondamento;
 $sidefont: Pangolin;
 $transition: all 0.5s;
+
+body {
+	background-color: $bgcolor;
+}
 
 #container {
 	width: 1330px;
