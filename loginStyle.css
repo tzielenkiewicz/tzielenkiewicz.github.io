@@ -1,0 +1,105 @@
+:root {
+    --color-dark:#361999;
+    --color-light:#78fff1; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(to top right, var(--color-dark), var(--color-light));
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+form {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.35));
+    border-radius: 15px;
+    box-shadow: 0px, 8px, 24px, 0 rgba(0,0,0,0.3);
+    max-width: 300px;
+    padding: 36px 24px;
+    text-align: center;
+}
+
+.form__input-container {
+    margin-bottom: 32px;
+    position: relative;
+}
+input, button {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px, 8px, 24px, 0 rgba(0,0,0,0.3);
+    color: rgb(255,255,255);
+    font-size: 24px;
+    padding: 12px 24px;
+    transition: box-shadow 0.3s, outline 0.1s;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    color: rgb(255,255,255);
+    cursor: text;
+    font-style: italic;
+    left: 24px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s, opacity 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    left: 200px;
+    opacity: 0;
+}
+
+input:placeholder-shown {
+    background-color: yellowgreen;
+}
+
+input:hover,
+button:hover {
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.35);
+}
+
+input:focus,
+button:focus {
+    outline: solid 3px rgba(255, 255, 255, 0.8);
+}
+
+button {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+button:after {
+    background: rgba(255, 255, 255, 0.5);
+    content: "";
+    display: block;
+    height: 100px;
+    left: -70px;
+    position: absolute;
+    top: -50%;
+    transform: skewX(-15deg);
+    transition: left 0.15s linear;
+    width: 50px;
+}
+
+button:hover:after {
+    left: 110%;
+}
+
